@@ -7,7 +7,7 @@ const App: FC = () => {
     const {refreshAction} = useActions();
 
     useEffect(() => {
-        if(localStorage.getItem('uccessToken')){
+        if(localStorage.getItem('accessToken')){
             refreshAction();
         }
     }, [])
